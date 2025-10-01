@@ -416,6 +416,65 @@
     handleScroll();
 
   </script>
+<script>
+    // FAQ Accordion functionality
+    const faqContainer = document.getElementById('faq-container');
+    if(faqContainer){
+        faqContainer.addEventListener('click', function(event) {
+            const question = event.target.closest('.faq-question');
+            if (!question) return;
 
+            const answer = question.nextElementSibling;
+            const allAnswers = faqContainer.querySelectorAll('.faq-answer');
+            const allQuestions = faqContainer.querySelectorAll('.faq-question');
+
+            // Close other open answers
+            allAnswers.forEach(ans => {
+                if (ans !== answer && ans.classList.contains('open')) {
+                    ans.classList.remove('open');
+                }
+            });
+            allQuestions.forEach(q => {
+                if (q !== question && q.classList.contains('open')) {
+                    q.classList.remove('open');
+                }
+            });
+
+            answer.classList.toggle('open');
+            question.classList.toggle('open');
+        });
+    }
+
+    // Existing mailto functionality
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // --- Updated Professional Email Body ---
+    const emailBody = `
+New Inquiry from Website Contact Form
+--------------------------------------
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+    `;
+    // ------------------------------------
+
+    const mailtoLink = `mailto:shehrozwaleedbaloch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailtoLink;
+  });
+}
+  </script>
 </body>
 </html>
