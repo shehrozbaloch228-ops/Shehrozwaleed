@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Shehroz Waleed</title>
-  <meta name="description" content="Learn about Shehroz Waleed, an Amazon Wholesale Specialist with a background in accounting and finance, dedicated to helping brands grow." />
+  <title>Contact — Shehroz Waleed</title>
+  <meta name="description" content="Get in touch with Shehroz Waleed to discuss your Amazon wholesale strategy. Let's build a profitable partnership together." />
   <meta name="theme-color" content="#0b66c3" />
   <!-- ====== Top-Notch SVG Favicon Start ====== -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path fill=%22%230ea5e9%22 d=%22M85,25 L85,75 L65,75 L65,50 L45,50 L45,75 L25,75 L25,25 L45,25 L45,40 L65,40 L65,25 Z%22 /></svg>">
@@ -16,34 +16,40 @@
   <style>
     :root{color-scheme: light;}
     html,body{scroll-behavior: smooth;}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background-color:#ffffff;color:#1e293b;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background-color:#f8fafc;color:#1e293b;}
     a{color:#0b66c3; transition: color 0.3s ease;}
     a:hover{color:#08519c;}
     a:focus{outline:3px solid rgba(59,130,246,.4);outline-offset:3px;border-radius:6px;}
     .shadow-soft{box-shadow:0 10px 30px rgba(12,20,40,.08)}
     .shadow-strong{box-shadow: 0 20px 50px rgba(12, 20, 40, 0.15);}
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);}
-    .reveal.visible { opacity: 1; transform: translateY(0);}
-    .timeline-item:before {
-      content: '';
-      position: absolute;
-      left: -30px;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background-color: #e2e8f0;
+    .form-input {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      transition: all 0.3s ease;
+      padding: 0.75rem 1rem;
     }
-    .timeline-dot {
-      position: absolute;
-      left: -36px;
-      top: 5px;
-      width: 14px;
-      height: 14px;
-      border: 2px solid #ffffff;
-      background-color: #3b82f6;
+    .form-input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
     }
-    .timeline-item:last-child:before {
-      height: 10px;
+    .faq-answer {
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .faq-answer.open {
+      max-height: 500px;
+      padding-top: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .faq-question svg {
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-question.open svg {
+        transform: rotate(180deg);
     }
     .nav-link-active {
       color: #2563eb;
@@ -65,13 +71,13 @@
   </style>
 </head>
 <body class="antialiased pt-20">
+
   <!-- ====== Header Start ====== -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Site Logo/Name -->
         <div class="flex-shrink-0">
-          <!-- ====== Top-Notch SVG Logo Added Here ====== -->
           <a href="index.html" class="flex items-center gap-3 text-2xl font-extrabold text-white md:text-gray-800 transition-colors duration-300" id="logo-text-wrapper">
             <svg class="w-8 h-8 text-sky-400" id="logo-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
@@ -82,9 +88,9 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-8">
           <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Home</a>
-          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors nav-link-active">About</a>
+          <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">About</a>
           <a href="services.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Services</a>
-          <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Contact</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors nav-link-active">Contact</a>
         </nav>
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
@@ -104,9 +110,9 @@
     <div id="mobile-menu" class="md:hidden mobile-menu fixed top-20 left-0 w-full bg-white shadow-lg transform -translate-x-full">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <a href="index.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-        <a href="about.html" class="text-blue-600 block px-3 py-2 rounded-md text-base font-semibold">About</a>
+        <a href="about.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
         <a href="services.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-        <a href="contact.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        <a href="contact.html" class="text-blue-600 block px-3 py-2 rounded-md text-base font-semibold">Contact</a>
       </div>
     </div>
   </header>
@@ -515,4 +521,5 @@
     </script>
 </body>
 </html>
+
 
