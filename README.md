@@ -1,26 +1,30 @@
-# Hi 👋, I'm Shehroz Waleed
+# 👋 Hi, I'm Shehroz Waleed
 
-**Amazon Growth Specialist | Data-Driven E-Commerce Architect | Financial Strategist**
-
----
-
-I am a results-driven Amazon Growth Specialist with 2+ years of experience, specializing in architecting profitable, data-driven wholesale strategies for U.S. brands. With a strong background in Accounting and Finance, I fuse financial acumen with e-commerce expertise to transform a brand's Amazon channel into a powerful, sustainable asset.
-
-I partner with brands to manage the entire Amazon ecosystem—from sourcing and logistics to account health and scaling. My mission is to move beyond conventional sales tactics and serve as a true financial partner, ensuring every decision is a calculated step toward sustainable, long-term growth.
+**Amazon Growth Architect | E-Commerce Strategist | Financial Performance Partner**
 
 ---
 
-- 🔭 **Currently helping U.S. brands scale profitably on the Amazon marketplace.**
-- 🌱 **Constantly learning** the latest e-commerce analytics tools and supply chain innovations.
-- 👨‍💻 **Portfolio & case studies:** [shehrozwaleedbaloch.horizonhaulerllc.com](https://shehrozwaleedbaloch.horizonhaulerllc.com)
-- 📝 **Insights & articles:** [LinkedIn Profile](https://linkedin.com/in/shehroz-waleed-5584b2296)
-- 💬 **Ask me about:** Amazon FBA/FBM wholesale, brand growth, and e-commerce financial strategy.
-- 📫 **How to reach me:** shehrozwaleedbaloch@gmail.com
-- ⚡ **Fun fact:** I enjoy finding the story behind the numbers to unlock hidden profitability.
+Welcome! I specialize in transforming Amazon businesses into scalable, data-driven profit engines for U.S. brands. With over two years of hands-on experience, I blend advanced marketplace strategy, financial acumen, and operational excellence to drive sustainable, long-term growth.
 
 ---
 
-## 🚀 Connect with me
+## 💡 About Me
+
+As an Amazon Growth Architect, I partner with brands to optimize every aspect of their Amazon presence—from account health, logistics, and inventory forecasting to financial modeling and brand protection. My approach is holistic: I go beyond surface-level tactics to architect systems that unlock hidden revenue and maximize ROI.
+
+---
+
+- 🔭 **Currently Scaling:** U.S. brands seeking breakthrough results on Amazon.
+- 📊 **Strengths:** End-to-end Amazon management, data-driven decision making, and innovative problem solving.
+- 🏆 **Portfolio:** [shehrozwaleedbaloch.horizonhaulerllc.com](https://shehrozwaleedbaloch.horizonhaulerllc.com)
+- 📝 **Thought Leadership & Insights:** [LinkedIn](https://linkedin.com/in/shehroz-waleed-5584b2296)
+- 💬 **Let’s Talk:** Amazon FBA/FBM wholesale, e-commerce growth, advanced analytics, and financial strategy.
+- 📫 **Contact:** shehrozwaleedbaloch@gmail.com
+- ⚡ **Fun Fact:** I’m passionate about uncovering the story behind the numbers to drive smarter business decisions.
+
+---
+
+## 🌐 Connect With Me
 
 <p align="left">
   <a href="https://linkedin.com/in/shehroz-waleed-5584b2296" target="_blank">
@@ -42,30 +46,37 @@ I partner with brands to manage the entire Amazon ecosystem—from sourcing and 
 
 ---
 
-## 🛠️ My Core Skills & Tools
+## 🛠️ Core Competencies
 
-### E-Commerce Strategy
-- Amazon Wholesale (FBA & FBM)
-- Brand Scaling
-- Market Analysis
-- MAP Policy Enforcement
+### E-Commerce & Amazon Strategy
+- Advanced Amazon Wholesale (FBA & FBM)
+- Marketplace Domination & Brand Scaling
+- Competitive Market Analysis & Opportunity Identification
+- MAP & Brand Protection
 
-### Financial Analysis
-- Profitability & ROI Calculation
-- Data-Driven Decision Making
-- Inventory Forecasting
+### Financial Excellence
+- End-to-End Profitability Analysis
+- Dynamic ROI & Margin Optimization
+- Inventory Planning & Demand Forecasting
 
-### Amazon Toolset
-- Helium 10
-- Jungle Scout
-- Keepa
-- Seller Central Mastery
-
-### Logistics & Operations
-- Supply Chain Management
-- FBA Shipment Creation
-- 3PL Coordination
+### Operations & Technology
+- Expert in Helium 10, Jungle Scout, Keepa, Seller Central
+- Supply Chain Design & FBA Shipment Execution
+- 3PL Integration & Workflow Automation
 
 ---
 
-> **“Beyond sales, I’m your financial partner for sustainable Amazon growth.”**
+## 🚀 My Approach
+
+I believe in building resilient Amazon businesses by:
+
+- Leveraging data-driven insights for every decision
+- Aligning operational execution with financial objectives
+- Proactively mitigating risks and protecting brand value
+- Treating your business as my own—for sustainable success
+
+---
+
+> **“I don’t just drive sales—I architect your Amazon business for lasting profitability and growth.”**
+
+---
