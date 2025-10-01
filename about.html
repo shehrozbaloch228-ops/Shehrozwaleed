@@ -315,7 +315,6 @@
   <script>
     // Scroll animation script
     const revealElements = document.querySelectorAll('.reveal');
-
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -326,10 +325,50 @@
     }, {
         threshold: 0.1,
     });
-
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
+
+    // ====== Header Script ======
+    const header = document.getElementById('site-header');
+    const logoText = document.getElementById('logo-text');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    // Sticky header background change on scroll
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+        logoText.classList.remove('text-white');
+        logoText.classList.add('text-gray-800');
+        mobileMenuButton.classList.remove('text-white');
+        mobileMenuButton.classList.add('text-gray-600');
+      } else {
+        header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+        logoText.classList.add('text-white');
+        logoText.classList.remove('text-gray-800');
+        mobileMenuButton.classList.add('text-white');
+        mobileMenuButton.classList.remove('text-gray-600');
+      }
+    };
+    
+    // Mobile menu toggle
+    const toggleMenu = () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+      mobileMenu.classList.toggle('-translate-x-full');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    mobileMenuButton.addEventListener('click', toggleMenu);
+
+    // Initial check in case page is reloaded halfway down
+    handleScroll();
+
   </script>
 
 </body>
