@@ -6,7 +6,7 @@
   <title>About — Shehroz Waleed</title>
   <meta name="description" content="Learn about Shehroz Waleed, an Amazon Wholesale Specialist with a background in accounting and finance, dedicated to helping brands grow." />
   <meta name="theme-color" content="#0b66c3" />
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -20,62 +20,49 @@
     a:focus{outline:3px solid rgba(59,130,246,.4);outline-offset:3px;border-radius:6px;}
     .shadow-soft{box-shadow:0 10px 30px rgba(12,20,40,.08)}
     .shadow-strong{box-shadow: 0 20px 50px rgba(12, 20, 40, 0.15);}
-    /* For scroll animations */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    /* Timeline styling */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);}
+    .reveal.visible { opacity: 1; transform: translateY(0);}
     .timeline-item:before {
-        content: '';
-        position: absolute;
-        left: -30px;
-        top: 0;
-        width: 2px;
-        height: 100%;
-        background-color: #e2e8f0;
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #e2e8f0;
     }
     .timeline-dot {
-        position: absolute;
-        left: -36px;
-        top: 5px;
-        width: 14px;
-        height: 14px;
-        border: 2px solid #ffffff;
-        background-color: #3b82f6;
+      position: absolute;
+      left: -36px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #ffffff;
+      background-color: #3b82f6;
     }
     .timeline-item:last-child:before {
-        height: 10px;
+      height: 10px;
     }
-    /* Style for the active navigation link */
     .nav-link-active {
-        color: #2563eb; /* A distinct blue color for the active link */
-        font-weight: 600;
-        position: relative;
+      color: #2563eb;
+      font-weight: 600;
+      position: relative;
     }
-    /* Underline for the active desktop link */
     .nav-link-active::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #2563eb;
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #2563eb;
     }
-    /* Custom transition for mobile menu */
     .mobile-menu {
-        transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
     }
   </style>
 </head>
-<body class="antialiased pt-20"> <!-- Added padding-top -->
-  
+<body class="antialiased pt-20">
   <!-- ====== Header Start ====== -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,7 +71,6 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="text-2xl font-extrabold text-white md:text-gray-800" id="logo-text">Shehroz Waleed</a>
         </div>
-        
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-8">
           <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Home</a>
@@ -92,10 +78,9 @@
           <a href="services.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Services</a>
           <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Contact</a>
         </nav>
-
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
-          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+          <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" id="hamburger-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -107,7 +92,6 @@
         </div>
       </div>
     </div>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden mobile-menu fixed top-20 left-0 w-full bg-white shadow-lg transform -translate-x-full">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -119,126 +103,133 @@
     </div>
   </header>
   <!-- ====== Header End ====== -->
-  
+
   <a class="sr-only focus:not-sr-only p-2 m-2 inline-block bg-white text-blue-700 rounded" href="#main">Skip to content</a>
 
   <main id="main" tabindex="-1">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gray-900 -mt-20" aria-label="About Me Hero"> <!-- Negative margin -->
+    <section class="relative overflow-hidden bg-gray-900 -mt-20" aria-label="About Me Hero">
       <div class="absolute inset-0 w-full h-full">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2400&auto-format&fit=crop" alt="A professional man looking thoughtfully towards the future" class="w-full h-full object-cover opacity-20">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2400&auto=format&fit=crop" alt="A professional man looking thoughtfully towards the future" class="w-full h-full object-cover object-center" />
         <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
       </div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 text-white text-center"> <!-- Adjusted padding -->
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 text-white text-center">
         <div class="max-w-4xl mx-auto">
           <p class="text-base font-semibold tracking-wider text-blue-400 uppercase">My Journey</p>
           <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">Driven by Data, Defined by Partnership</h1>
-          <p class="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">My story is one of bridging worlds—from the fundamentals of finance in Pakistan to the complexities of the Amazon U.S. marketplace—to build profitable, lasting success for my clients.</p>
+          <p class="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+            My story is one of bridging worlds—from the fundamentals of finance in Pakistan to the complexities of the Amazon U.S. marketplace. I blend analytical rigor with a collaborative approach, empowering brands to thrive in a data-driven era.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- My Mission Section -->
     <section class="py-24 sm:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="reveal order-2 lg:order-1">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">My Mission: Your Financial Success on Amazon</h2>
-                    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                        I am <span class="font-semibold text-blue-700">Shehroz Waleed</span>, an Amazon Growth Specialist whose passion lies at the intersection of finance and e-commerce. My mission is to move beyond conventional sales tactics and serve as a true financial partner to U.S. brands. I don't just manage accounts; I build data-driven, financially sound strategies that protect your brand's integrity and maximize its profitability in the world's most competitive marketplace. 
-                    </p>
-                    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-                        My commitment is to treat your business with the same analytical rigor and dedication as I would my own, ensuring every decision is a calculated step toward sustainable, long-term growth.
-                    </p>
-                </div>
-                <div class="reveal order-1 lg:order-2 flex justify-center">
-                     <div class="relative w-full max-w-sm">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-20"></div>
-                        <img src="https://i.ibb.co/pB63NnFH/1758678537029.jpg" alt="A professional headshot of Shehroz Waleed" class="relative rounded-2xl shadow-strong w-full object-cover">
-                     </div>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="reveal order-2 lg:order-1">
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">My Mission: Your Financial Success on Amazon</h2>
+            <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+              I am <span class="font-semibold text-blue-700">Shehroz Waleed</span>, an Amazon Growth Specialist whose passion lies at the intersection of finance and e-commerce. My mission is to treat every client's business as my own, applying proven strategies and deep analysis to unlock sustainable, long-term growth on Amazon.
+            </p>
+            <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+              My commitment is to treat your business with the same analytical rigor and dedication as I would my own, ensuring every decision is a calculated step toward sustainable, long-term progress.
+            </p>
+          </div>
+          <div class="reveal order-1 lg:order-2 flex justify-center">
+            <div class="relative w-full max-w-sm">
+              <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-20"></div>
+              <img src="https://i.ibb.co/pB63NnFH/1758678537029.jpg" alt="A professional headshot of Shehroz Waleed" class="relative rounded-2xl shadow-strong w-full object-cover">
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- My Journey Timeline -->
     <section class="py-24 sm:py-32 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">The Path to Expertise</h2>
-                <p class="mt-4 text-lg text-gray-600">My journey has been defined by key milestones that shaped my unique, finance-first approach to e-commerce.</p>
-            </div>
-            <div class="mt-20">
-                <div class="relative ml-8 sm:ml-12">
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item reveal pl-12 pb-12">
-                        <div class="timeline-dot rounded-full"></div>
-                        <p class="text-sm font-semibold text-blue-600 uppercase">Foundation</p>
-                        <h3 class="mt-2 text-2xl font-bold">Roots in Turbat, Balochistan</h3>
-                        <p class="mt-3 text-gray-600">My story begins in a vibrant city where I learned the core values of hard work, community, and perseverance—principles that remain the bedrock of my professional ethic today.</p>
-                    </div>
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item reveal pl-12 pb-12">
-                         <div class="timeline-dot rounded-full"></div>
-                        <p class="text-sm font-semibold text-blue-600 uppercase">Education</p>
-                        <h3 class="mt-2 text-2xl font-bold">Academic Rigor in Accounting & Finance</h3>
-                        <p class="mt-3 text-gray-600">At the University of Management and Technology (UMT), I earned my degree, which gave me a powerful lens to see beyond revenue and analyze the true financial health of a business. It's here I learned to read the story behind the numbers.</p>
-                    </div>
-                     <!-- Timeline Item 3 -->
-                    <div class="timeline-item reveal pl-12 pb-12">
-                         <div class="timeline-dot rounded-full"></div>
-                        <p class="text-sm font-semibold text-blue-600 uppercase">Specialization</p>
-                        <h3 class="mt-2 text-2xl font-bold">Mastering the Amazon Marketplace</h3>
-                        <p class="mt-3 text-gray-600">I translated my financial knowledge into a specialized skill set for the Amazon ecosystem. I mastered industry-leading tools like Helium 10, Jungle Scout, and Keepa, not just for product research, but for comprehensive profitability analysis.</p>
-                    </div>
-                     <!-- Timeline Item 4 -->
-                    <div class="timeline-item reveal pl-12">
-                        <div class="timeline-dot rounded-full"></div>
-                        <p class="text-sm font-semibold text-blue-600 uppercase">Partnership</p>
-                        <h3 class="mt-2 text-2xl font-bold">Empowering U.S. Brands</h3>
-                        <p class="mt-3 text-gray-600">Today, I apply this unique blend of skills as a freelance Amazon Growth Specialist, building data-driven strategies that empower U.S. brands to thrive. My journey allows me to bridge cultures and markets to deliver exceptional results.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">The Path to Expertise</h2>
+          <p class="mt-4 text-lg text-gray-600">My journey has been defined by key milestones that shaped my unique, finance-first approach to e-commerce.</p>
         </div>
+        <div class="mt-20">
+          <div class="relative ml-8 sm:ml-12">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item reveal pl-12 pb-12">
+              <div class="timeline-dot rounded-full"></div>
+              <p class="text-sm font-semibold text-blue-600 uppercase">Foundation</p>
+              <h3 class="mt-2 text-2xl font-bold">Roots in Turbat, Balochistan</h3>
+              <p class="mt-3 text-gray-600">My story begins in a vibrant city where I learned the core values of hard work, community, and perseverance—principles that remain the bedrock of my career.</p>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item reveal pl-12 pb-12">
+              <div class="timeline-dot rounded-full"></div>
+              <p class="text-sm font-semibold text-blue-600 uppercase">Education</p>
+              <h3 class="mt-2 text-2xl font-bold">Academic Rigor in Accounting & Finance</h3>
+              <p class="mt-3 text-gray-600">At the University of Management and Technology (UMT), I earned my degree, which gave me a powerful lens to see beyond revenue and analyze the true drivers of business growth.</p>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item reveal pl-12 pb-12">
+              <div class="timeline-dot rounded-full"></div>
+              <p class="text-sm font-semibold text-blue-600 uppercase">Specialization</p>
+              <h3 class="mt-2 text-2xl font-bold">Mastering the Amazon Marketplace</h3>
+              <p class="mt-3 text-gray-600">I translated my financial knowledge into a specialized skill set for the Amazon ecosystem. I mastered industry-leading tools like Helium 10, Jungle Scout, and SmartScout to drive results for my clients.</p>
+            </div>
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item reveal pl-12">
+              <div class="timeline-dot rounded-full"></div>
+              <p class="text-sm font-semibold text-blue-600 uppercase">Partnership</p>
+              <h3 class="mt-2 text-2xl font-bold">Empowering U.S. Brands</h3>
+              <p class="mt-3 text-gray-600">Today, I apply this unique blend of skills as a freelance Amazon Growth Specialist, building data-driven strategies that empower U.S. brands to thrive globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- My Guiding Principles -->
     <section class="py-24 sm:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">My Guiding Principles</h2>
-                <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">These three pillars are the foundation of every partnership and every strategy I build.</p>
-            </div>
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="reveal p-8">
-                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
-                       <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                    </div>
-                    <h3 class="mt-6 text-2xl font-bold">Financial Rigor</h3>
-                    <p class="mt-2 text-gray-600">Every decision is viewed through a financial lens. I prioritize profit and sustainable ROI over vanity metrics, ensuring your growth is both impressive and intelligent.</p>
-                </div>
-                <div class="reveal p-8" style="transition-delay: 150ms;">
-                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    </div>
-                    <h3 class="mt-6 text-2xl font-bold">Transparent Partnership</h3>
-                    <p class="mt-2 text-gray-600">I believe in open, honest communication. You will always have a clear understanding of your account's performance, our strategy, and the 'why' behind every action we take.</p>
-                </div>
-                <div class="reveal p-8" style="transition-delay: 300ms;">
-                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    </div>
-                    <h3 class="mt-6 text-2xl font-bold">Unwavering Integrity</h3>
-                    <p class="mt-2 text-gray-600">Your brand is your most valuable asset. I am committed to protecting its reputation through ethical sourcing, strict MAP policy adherence, and a commitment to excellence in all operations.</p>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">My Guiding Principles</h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">These three pillars are the foundation of every partnership and every strategy I build.</p>
         </div>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="reveal p-8">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zM19 19v-6a2 2 0 00-2-2h-2a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2z"></path>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-2xl font-bold">Financial Rigor</h3>
+            <p class="mt-2 text-gray-600">Every decision is viewed through a financial lens. I prioritize profit and sustainable ROI over vanity metrics, ensuring your growth is both impressive and resilient.</p>
+          </div>
+          <div class="reveal p-8" style="transition-delay: 150ms;">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M9 20H4v-2a3 3 0 015.356-1.857M15 8a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-2xl font-bold">Transparent Partnership</h3>
+            <p class="mt-2 text-gray-600">I believe in open, honest communication. You will always have a clear understanding of your account's performance, our strategy, and the 'why' behind every action.</p>
+          </div>
+          <div class="reveal p-8" style="transition-delay: 300ms;">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.969 11.969 0 0122 12c0 6.627-5.373 12-12 12S-2 18.627-2 12c0-2.042.487-3.97 1.382-5.651"></path>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-2xl font-bold">Unwavering Integrity</h3>
+            <p class="mt-2 text-gray-600">Your brand is your most valuable asset. I am committed to protecting its reputation through ethical sourcing, strict MAP policy adherence, and a commitment to excellence.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer id="footer" class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 border-t border-gray-700" role="contentinfo">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="grid lg:grid-cols-3 gap-12 lg:gap-16">
@@ -311,65 +302,61 @@
       </div>
     </div>
   </footer>
-  
+
   <script>
     // Scroll animation script
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1,
+    document.addEventListener('DOMContentLoaded', function() {
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.1 });
+      revealElements.forEach(el => {
+          revealObserver.observe(el);
+      });
+
+      // ====== Header Script ======
+      const header = document.getElementById('site-header');
+      const logoText = document.getElementById('logo-text');
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      // Sticky header background change on scroll
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+          logoText.classList.remove('text-white');
+          logoText.classList.add('text-gray-800');
+          mobileMenuButton.classList.remove('text-white');
+          mobileMenuButton.classList.add('text-gray-600');
+        } else {
+          header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+          logoText.classList.add('text-white');
+          logoText.classList.remove('text-gray-800');
+          mobileMenuButton.classList.add('text-white');
+          mobileMenuButton.classList.remove('text-gray-600');
+        }
+      };
+
+      // Mobile menu toggle
+      const toggleMenu = () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+        mobileMenu.classList.toggle('-translate-x-full');
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      mobileMenuButton.addEventListener('click', toggleMenu);
+      handleScroll();
     });
-    revealElements.forEach(el => {
-        revealObserver.observe(el);
-    });
-
-    // ====== Header Script ======
-    const header = document.getElementById('site-header');
-    const logoText = document.getElementById('logo-text');
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-
-    // Sticky header background change on scroll
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
-        logoText.classList.remove('text-white');
-        logoText.classList.add('text-gray-800');
-        mobileMenuButton.classList.remove('text-white');
-        mobileMenuButton.classList.add('text-gray-600');
-      } else {
-        header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
-        logoText.classList.add('text-white');
-        logoText.classList.remove('text-gray-800');
-        mobileMenuButton.classList.add('text-white');
-        mobileMenuButton.classList.remove('text-gray-600');
-      }
-    };
-    
-    // Mobile menu toggle
-    const toggleMenu = () => {
-      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-      hamburgerIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-      mobileMenu.classList.toggle('-translate-x-full');
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    mobileMenuButton.addEventListener('click', toggleMenu);
-
-    // Initial check in case page is reloaded halfway down
-    handleScroll();
-
   </script>
-
 </body>
-</html>
+    </section>
