@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Shehroz Waleed</title>
+  <meta name="description" content="Get in touch with Shehroz Waleed to discuss your Amazon wholesale strategy. Let's build a profitable partnership together." />
+  <meta name="theme-color" content="#0b66c3" />
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme: light;}
+    html,body{scroll-behavior: smooth;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background-color:#f8fafc;color:#1e293b;}
+    a{color:#0b66c3; transition: color 0.3s ease;}
+    a:hover{color:#08519c;}
+    a:focus{outline:3px solid rgba(59,130,246,.4);outline-offset:3px;border-radius:6px;}
+    .shadow-soft{box-shadow:0 10px 30px rgba(12,20,40,.08)}
+    .shadow-strong{box-shadow: 0 20px 50px rgba(12, 20, 40, 0.15);}
+    
+    /* Form input styling */
+    .form-input {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      transition: all 0.3s ease;
+      padding: 0.75rem 1rem;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+
+    /* FAQ Accordion styling */
+    .faq-answer {
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .faq-answer.open {
+      max-height: 500px; /* Adjust as needed */
+      padding-top: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .faq-question svg {
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-question.open svg {
+        transform: rotate(180deg);
+    }
+    /* Style for the active navigation link */
+    .nav-link-active {
+        color: #2563eb;
+        font-weight: 600;
+        position: relative;
+    }
+    /* Underline for the active desktop link */
+    .nav-link-active::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #2563eb;
+    }
+    /* Custom transition for mobile menu */
+    .mobile-menu {
+        transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="antialiased pt-20"> <!-- Added padding-top -->
+
+  <!-- ====== Header Start ====== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Site Logo/Name -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-2xl font-extrabold text-white md:text-gray-800" id="logo-text">Shehroz Waleed</a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Home</a>
+          <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">About</a>
+          <a href="services.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Services</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors nav-link-active">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" id="hamburger-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="h-6 w-6 hidden" id="close-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden mobile-menu fixed top-20 left-0 w-full bg-white shadow-lg transform -translate-x-full">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="about.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="services.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="contact.html" class="text-blue-600 block px-3 py-2 rounded-md text-base font-semibold">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!-- ====== Header End ====== -->
+  
+  <a class="sr-only focus:not-sr-only p-2 m-2 inline-block bg-white text-blue-700 rounded" href="#main">Skip to content</a>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gray-900 -mt-20" aria-label="Contact Hero"> <!-- Negative margin -->
+      <div class="absolute inset-0 w-full h-full">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2400&auto-format&fit=crop" alt="Team collaborating on a new project" class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 text-white text-center"> <!-- Adjusted padding -->
+        <div class="max-w-4xl mx-auto">
+          <p class="text-base font-semibold tracking-wider text-blue-400 uppercase">Connect With Me</p>
+          <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">Let's Architect Your Success</h1>
+          <p class="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">Your brand's future on Amazon is one conversation away. I'm here to provide the financial acumen and e-commerce expertise needed for remarkable, sustainable growth.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Hub Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Choose Your Preferred Way to Connect</h2>
+                <p class="mt-4 text-lg text-gray-600">I offer multiple channels for you to get in touch. Select the one that works best for you.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Email Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-soft border border-gray-100 text-center flex flex-col items-center">
+                    <div class="bg-blue-100 text-blue-600 p-4 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Email Me Directly</h3>
+                    <p class="mt-2 text-gray-600 flex-grow">Best for detailed inquiries and project proposals.</p>
+                    <a href="mailto:shehrozwaleedbaloch@gmail.com" class="mt-6 w-full inline-block text-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition">Send Email</a>
+                </div>
+                <!-- WhatsApp Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-soft border border-gray-100 text-center flex flex-col items-center">
+                    <div class="bg-green-100 text-green-600 p-4 rounded-full">
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Chat on WhatsApp</h3>
+                    <p class="mt-2 text-gray-600 flex-grow">Ideal for quick questions and immediate responses.</p>
+                    <a href="https://wa.me/923363330711" target="_blank" rel="noopener noreferrer" class="mt-6 w-full inline-block text-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 transition">Start Chat</a>
+                </div>
+                <!-- Schedule Call Card -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-soft border border-gray-100 text-center flex flex-col items-center">
+                    <div class="bg-purple-100 text-purple-600 p-4 rounded-full">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="mt-6 text-xl font-bold">Schedule a Consultation</h3>
+                    <p class="mt-2 text-gray-600 flex-grow">Let's book a dedicated time to discuss your strategy.</p>
+                    <a href="https://calendly.com/shehrozbaloch228/30min" target="_blank" rel="noopener noreferrer" class="mt-6 w-full inline-block text-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-purple-600 hover:bg-purple-700 transition">Book a Meeting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-24 sm:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Left Column: Information -->
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Your Strategic Growth Partner</h2>
+                        <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                            Partnering with me means more than just hiring a specialist; it means gaining a dedicated strategist committed to your brand's financial health and market dominance. My approach is built on a foundation of transparency, data-driven decisions, and a relentless pursuit of profitability.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Section (Moved Here) -->
+                    <div class="border-t border-gray-200 pt-8">
+                        <h3 class="text-xl font-bold text-gray-900">Answering Your Questions</h3>
+                        <div class="mt-6 space-y-4" id="faq-container">
+                            <!-- FAQ Item 1 -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                                <button class="faq-question flex justify-between items-center w-full p-6 text-left">
+                                    <span class="text-lg font-semibold text-gray-800">What is the typical ROI I can expect?</span>
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6">
+                                    <p class="text-gray-600 leading-relaxed">While ROI can vary based on product, market competition, and ad spend, my data-driven approach aims for a minimum of 25-30% ROI. We'll establish clear KPIs and financial models before launching any product.</p>
+                                </div>
+                            </div>
+                            <!-- FAQ Item 2 -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                                <button class="faq-question flex justify-between items-center w-full p-6 text-left">
+                                    <span class="text-lg font-semibold text-gray-800">Do you work with brands outside the U.S.?</span>
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6">
+                                    <p class="text-gray-600 leading-relaxed">Currently, my primary focus and expertise are within the Amazon U.S. marketplace. I partner with U.S.-based brands to ensure compliance, efficient logistics, and maximum market penetration.</p>
+                                </div>
+                            </div>
+                            <!-- FAQ Item 3 -->
+                             <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                                <button class="faq-question flex justify-between items-center w-full p-6 text-left">
+                                    <span class="text-lg font-semibold text-gray-800">What makes your approach different?</span>
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6">
+                                    <p class="text-gray-600 leading-relaxed">My background in Accounting and Finance is my key differentiator. I don't just find products; I build comprehensive financial strategies for them. Every decision is backed by rigorous data analysis, from sourcing and logistics to pricing and PPC campaigns, ensuring sustainable and profitable growth for your brand.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-strong border border-gray-100">
+                    <h2 class="text-2xl font-extrabold text-blue-700">Send a Detailed Message</h2>
+                    <p class="mt-2 text-gray-600">For specific inquiries, please fill out the form. I will respond within one business day.</p>
+                    <form id="contactForm" class="mt-8 space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-800">Full Name</label>
+                            <input type="text" name="name" id="name" autocomplete="name" class="mt-1 block w-full rounded-md form-input" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-800">Email Address</label>
+                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full rounded-md form-input" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-800">Subject</label>
+                            <input type="text" name="subject" id="subject" class="mt-1 block w-full rounded-md form-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-800">How can I help?</label>
+                            <textarea id="message" name="message" rows="5" class="mt-1 block w-full rounded-md form-input" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full inline-flex items-center justify-center py-3 px-6 border border-transparent shadow-soft text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105">
+                                Send a query
+                                <svg class="ml-3 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </button>
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section class="py-24 sm:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative rounded-2xl overflow-hidden shadow-strong">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435519.2270553183!2d74.05418870183958!3d31.48322087542914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1664321098765" 
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+                    title="Map of Lahore, Pakistan" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-8 sm:p-12 text-white">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold">My Home Base in Lahore</h2>
+                    <p class="mt-4 text-lg text-gray-200 max-w-xl">While I collaborate with brands across the globe, my operational base is in the vibrant city of Lahore, Pakistan—a hub of culture and commerce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+<!-- Footer -->
+  <footer id="footer" class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 border-t border-gray-700" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-3 gap-12 lg:gap-16">
+        <!-- Brand Section -->
+        <div class="lg:col-span-1">
+          <h3 class="text-3xl font-extrabold text-white mb-4">Shehroz Waleed</h3>
+          <p class="text-gray-400 leading-relaxed mb-6">Fusing financial acumen with e-commerce expertise to architect sustainable growth and lasting partnerships for brands on the Amazon marketplace.</p>
+          <div class="flex items-center gap-3 text-sm text-gray-400">
+            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Lahore, Punjab, Pakistan</span>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="lg:col-span-1">
+          <h4 class="text-white font-bold mb-6 text-lg">Get in Touch</h4>
+          <ul class="space-y-4">
+            <li>
+              <a class="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group" href="mailto:shehrozwaleedbaloch@gmail.com">
+                <svg class="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                </svg>
+                <span>shehrozwaleedbaloch@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group" href="tel:+923363330711">
+                <svg class="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                <span>+92 336 3330711</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white transition-all duration-300 flex items-center gap-3 group" href="https://wa.me/923363330711" target="_blank" rel="noopener noreferrer">
+                <svg class="w-5 h-5 text-green-500 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span> +92 336 3330711</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Section -->
+        <div class="lg:col-span-1">
+          <h4 class="text-white font-bold mb-6 text-lg">Connect With Me</h4>
+          <p class="text-gray-400 mb-6 leading-relaxed">Follow my journey and stay updated with the latest insights on Amazon growth strategies.</p>
+          <div class="flex gap-4">
+            <a href="https://www.linkedin.com/in/shehroz-waleed-5584b2296" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg" aria-label="LinkedIn Profile">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://twitter.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-blue-400 transition-all duration-300 hover:scale-110 hover:shadow-lg" aria-label="Twitter Profile">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-pink-600 transition-all duration-300 hover:scale-110 hover:shadow-lg" aria-label="Instagram Profile">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.011 7.053.069 2.59.215.166 2.59.02 7.053.011 8.333 0 8.74 0 12s.011 3.667.069 4.947c.147 4.46 2.59 6.884 7.053 7.031 1.28.058 1.687.069 4.947.069s3.667-.011 4.947-.069c4.46-.147 6.884-2.59 7.031-7.053.058-1.28.069-1.687.069-4.947s-.011-3.667-.069-4.947C21.41.215 18.986-.166 14.947.02 13.667.011 13.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1B9py6u6Hw/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-blue-700 transition-all duration-300 hover:scale-110 hover:shadow-lg" aria-label="Facebook Profile">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.29h-3.128v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.92c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Shehroz Waleed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Scroll animation script
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+    });
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // ====== Header Script ======
+    const header = document.getElementById('site-header');
+    const logoText = document.getElementById('logo-text');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    // Sticky header background change on scroll
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+        logoText.classList.remove('text-white');
+        logoText.classList.add('text-gray-800');
+        mobileMenuButton.classList.remove('text-white');
+        mobileMenuButton.classList.add('text-gray-600');
+      } else {
+        header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+        logoText.classList.add('text-white');
+        logoText.classList.remove('text-gray-800');
+        mobileMenuButton.classList.add('text-white');
+        mobileMenuButton.classList.remove('text-gray-600');
+      }
+    };
+    
+    // Mobile menu toggle
+    const toggleMenu = () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+      mobileMenu.classList.toggle('-translate-x-full');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    mobileMenuButton.addEventListener('click', toggleMenu);
+
+    // Initial check in case page is reloaded halfway down
+    handleScroll();
+
+  </script>
+
+</body>
+</html>
