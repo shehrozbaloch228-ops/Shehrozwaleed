@@ -1,50 +1,71 @@
-# Shehroz Waleed — Personal Portfolio Website
+# Hi 👋, I'm Shehroz Waleed
 
-[cite_start]This repository contains the source code for the personal portfolio website of Shehroz Waleed, an Amazon Wholesale Growth Specialist[cite: 216].
-
-**➡️ View Live Site: [https://shehrozbaloch228.github.io](https://shehrozbaloch228.github.io)**
-*(Replace "your-username" with your actual GitHub username)*
-
-![Shehroz Waleed Portfolio Screenshot](https://i.ibb.co/pB63NnFH/1758678537029.jpg)
+**Amazon Growth Specialist | Data-Driven E-Commerce Architect | Financial Strategist**
 
 ---
 
-## 👨‍💻 About Me
+I am a results-driven Amazon Growth Specialist with 2+ years of experience, specializing in architecting profitable, data-driven wholesale strategies for U.S. brands. With a strong background in Accounting and Finance, I fuse financial acumen with e-commerce expertise to transform a brand's Amazon channel into a powerful, sustainable asset.
 
-[cite_start]I am Shehroz Waleed, an Amazon Growth Specialist with a passion for the intersection of finance and e-commerce[cite: 171]. [cite_start]My mission is to serve as a true financial partner to U.S. brands by building data-driven, financially sound strategies that protect brand integrity and maximize profitability[cite: 172, 173].
-
-[cite_start]My approach fuses financial acumen with e-commerce expertise to transform a brand's Amazon channel into a powerful, sustainable asset[cite: 224]. [cite_start]I am based in Lahore, Punjab, Pakistan[cite: 59].
-
-## ✨ Core Services
-
-[cite_start]My services are a comprehensive suite of solutions designed to build, manage, and scale a brand's profitability on Amazon[cite: 85].
-
-* [cite_start]**📈 Strategy & Sourcing:** Data-driven product hunting, rigorous supplier vetting, and ensuring strict MAP policy adherence[cite: 90, 238].
-* [cite_start]**🚚 Fulfillment & Logistics:** Precise inventory forecasting, FBA shipment creation, and efficient FBM order processing[cite: 93, 239].
-* [cite_start]**📊 Account Health & Growth:** Proactive performance monitoring, deep profitability analysis, and strategic scaling initiatives to expand market reach[cite: 96, 240].
-
-## 🛠️ Technology Stack
-
-This website is built with a focus on simplicity, performance, and modern design standards.
-
-* **HTML5**
-* [cite_start]**Tailwind CSS** [cite: 80] for utility-first styling.
-* [cite_start]**JavaScript** for interactive elements like the FAQ accordion[cite: 72, 75].
-
-## 🚀 How to Use
-
-To view the website locally:
-1.  Clone or download this repository.
-2.  Open the `index.html` file in your web browser.
-
-## 📫 Get in Touch
-
-You can reach out to me through any of the following channels:
-
-* [cite_start]**Email:** `shehrozwaleedbaloch@gmail.com` [cite: 61]
-* [cite_start]**WhatsApp:** `+92 336 3330711` [cite: 63]
-* [cite_start]**LinkedIn:** [Shehroz Waleed](https://www.linkedin.com/in/shehroz-waleed-5584b2296) [cite: 66]
+I partner with brands to manage the entire Amazon ecosystem—from sourcing and logistics to account health and scaling. My mission is to move beyond conventional sales tactics and serve as a true financial partner, ensuring every decision is a calculated step toward sustainable, long-term growth.
 
 ---
 
-© 2024 Shehroz Waleed. [cite_start]All rights reserved. [cite: 267]
+- 🔭 **Currently helping U.S. brands scale profitably on the Amazon marketplace.**
+- 🌱 **Constantly learning** the latest e-commerce analytics tools and supply chain innovations.
+- 👨‍💻 **Portfolio & case studies:** [shehrozwaleedbaloch.horizonhaulerllc.com](https://shehrozwaleedbaloch.horizonhaulerllc.com)
+- 📝 **Insights & articles:** [LinkedIn Profile](https://linkedin.com/in/shehroz-waleed-5584b2296)
+- 💬 **Ask me about:** Amazon FBA/FBM wholesale, brand growth, and e-commerce financial strategy.
+- 📫 **How to reach me:** shehrozwaleedbaloch@gmail.com
+- ⚡ **Fun fact:** I enjoy finding the story behind the numbers to unlock hidden profitability.
+
+---
+
+## 🚀 Connect with me
+
+<p align="left">
+  <a href="https://linkedin.com/in/shehroz-waleed-5584b2296" target="_blank">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="30" height="30" />
+  </a>
+  <a href="https://twitter.com/shehroz__waleed" target="_blank">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="30" height="30" />
+  </a>
+  <a href="https://instagram.com/shehroz__waleed" target="_blank">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="30" height="30" />
+  </a>
+  <a href="https://fb.com/share/1B9py6u6Hw/" target="_blank">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="30" height="30" />
+  </a>
+  <a href="mailto:shehrozwaleedbaloch@gmail.com" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/envelope.svg" width="30" height="30" />
+  </a>
+</p>
+
+---
+
+## 🛠️ My Core Skills & Tools
+
+### E-Commerce Strategy
+- Amazon Wholesale (FBA & FBM)
+- Brand Scaling
+- Market Analysis
+- MAP Policy Enforcement
+
+### Financial Analysis
+- Profitability & ROI Calculation
+- Data-Driven Decision Making
+- Inventory Forecasting
+
+### Amazon Toolset
+- Helium 10
+- Jungle Scout
+- Keepa
+- Seller Central Mastery
+
+### Logistics & Operations
+- Supply Chain Management
+- FBA Shipment Creation
+- 3PL Coordination
+
+---
+
+> **“Beyond sales, I’m your financial partner for sustainable Amazon growth.”**
