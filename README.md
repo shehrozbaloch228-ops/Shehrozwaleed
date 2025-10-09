@@ -16,7 +16,7 @@ As an Amazon Growth Architect, I partner with brands to optimize every aspect of
 
 - 🔭 **Currently Scaling:** U.S. brands seeking breakthrough results on Amazon.
 - 📊 **Strengths:** End-to-end Amazon management, data-driven decision making, and innovative problem solving.
-- 🏆 **Portfolio:** [shehrozwaleedbaloch.horizonhaulerllc.com](https://shehrozwaleedbaloch.horizonhaulerllc.com)
+- 🏆 **Portfolio:** [shehrozwaleed.horizonhaulerllc.com](https://shehrozwaleed.horizonhaulerllc.com)
 - 📝 **Thought Leadership & Insights:** [LinkedIn](https://www.linkedin.com/in/shehrozwaleed)
 - 💬 **Let’s Talk:** Amazon FBA/FBM wholesale, e-commerce growth, advanced analytics, and financial strategy.
 - 📫 **Contact:** shehrozwaleedbaloch@gmail.com
