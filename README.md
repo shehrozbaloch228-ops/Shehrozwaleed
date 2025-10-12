@@ -36,7 +36,7 @@ As an Amazon Growth Architect, I partner with brands to optimize every aspect of
   <a href="https://instagram.com/shehroz__waleed" target="_blank">
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="30" height="30" />
   </a>
-  <a href="https://fb.com/share/1B9py6u6Hw/" target="_blank">
+  <a href="https://fb.com/shehrozwaleed228" target="_blank">
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="30" height="30" />
   </a>
   <a href="mailto:shehrozwaleedbaloch@gmail.com" target="_blank">
