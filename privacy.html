@@ -5,99 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Shehroz Waleed</title>
   <meta name="description" content="Privacy Policy for the personal portfolio website of Shehroz Waleed, an Amazon Wholesale Growth Specialist." />
-  <meta name="theme-color" content="#0b66c3" />
-  <!-- ====== Top-Notch SVG Favicon Start ====== -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path fill=%22%230ea5e9%22 d=%22M85,25 L85,75 L65,75 L65,50 L45,50 L45,75 L25,75 L25,25 L45,25 L45,40 L65,40 L65,25 Z%22 /></svg>">
-  <!-- ====== Top-Notch SVG Favicon End ====== -->
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Monochrome SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='60' font-size='42' text-anchor='middle' fill='%23fff' font-family='Inter,system-ui,Arial'%3ES%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    :root{color-scheme: light;}
-    html,body{scroll-behavior: smooth;}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background-color:#ffffff;color:#1e293b;}
-    a{color:#0b66c3; transition: color 0.3s ease;}
-    a:hover{color:#08519c;}
-    a:focus{outline:3px solid rgba(59,130,246,.4);outline-offset:3px;border-radius:6px;}
-    .shadow-soft{box-shadow:0 10px 30px rgba(12,20,40,.08)}
-    .shadow-strong{box-shadow: 0 20px 50px rgba(12, 20, 40, 0.15);}
-    .nav-link-active { color: #2563eb; font-weight: 600; position: relative; }
-    .nav-link-active::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background-color: #2563eb; }
-    .mobile-menu { transition: transform 0.3s ease-in-out; }
-    .policy-content h2 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
-    .policy-content h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
+    :root{
+      color-scheme: dark;
+      --bg: #050505;
+      --panel: #0b0b0b;
+      --muted: #9ca3af; /* Gray-400 equivalent */
+      --text: #ffffff;
+      --soft-border: rgba(255,255,255,0.04);
+      --accent-strong: rgba(255,255,255,0.06);
+      --sky-400: #38bdf8; /* Tailwind Sky-400 */
+      --sky-500: #0ea5e9; /* Tailwind Sky-500 */
+    }
+    html,body{scroll-behavior:smooth}
+    body{
+      font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+      background:var(--bg);
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-top:5rem; /* Match header height */
+    }
+
+    a{ color:var(--text); text-decoration:none; }
+    a:hover{ opacity:0.95; }
+
+    /* Header */
+    .site-header{
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(5,5,5,0.8), rgba(5,5,5,0.6)); /* Adjusted for dark theme */
+      border-bottom: 1px solid var(--soft-border);
+    }
+    .nav-link { color:var(--muted); transition:color .18s; }
+    .nav-link:hover{ color:var(--text); }
+    /* No active nav link styles needed for privacy page */
+
+    /* Mobile Menu */
+     #mobile-menu {
+        background-color: var(--panel); /* Solid panel background */
+        border-bottom: 1px solid var(--soft-border);
+        transition: transform 0.3s ease-in-out;
+     }
+
+    /* Buttons */
+    .btn { display:inline-flex; align-items:center; gap:.6rem; padding:.7rem 1.2rem; border-radius:8px; font-weight:600; letter-spacing:.02em; transition: background-color 0.2s, color 0.2s, filter 0.2s; }
+    .btn-primary { background:var(--text); color:var(--panel); border:1px solid var(--text); }
+    .btn-primary:hover { filter:brightness(.95); }
+    .btn-ghost { background:transparent; border:1px solid var(--soft-border); color:var(--text); }
+    .btn-ghost:hover { background: var(--accent-strong); }
+
+    /* Cards & inputs */
+    .card { background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008)); border:1px solid var(--soft-border); border-radius:12px; }
+    .form-input {
+      background:transparent; color:var(--text); border:1px solid rgba(255,255,255,0.06);
+      padding:.75rem 1rem; border-radius:8px; transition:box-shadow .12s, border-color .12s;
+    }
+    .form-input::placeholder { color:var(--muted); opacity:.8; }
+    .form-input:focus { outline:none; border-color:rgba(255,255,255,0.16); box-shadow:0 8px 30px rgba(255,255,255,0.02); }
+
+    /* Footer Styles */
+    footer a { text-decoration:none; color:var(--muted); transition: color 0.2s ease; }
+    footer .quick-link:hover { color: var(--sky-400); }
+    footer .contact-link:hover { color: var(--text); }
+    footer .footer-title { color:var(--text); font-weight:600; }
+    footer .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px; height: 44px;
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 8px;
+        color: var(--muted);
+        transition: all 0.2s ease;
+    }
+    footer .social-link:hover {
+        background: rgba(255,255,255,0.05);
+        border-color: rgba(255,255,255,0.15);
+        color: var(--text);
+    }
+
+     /* Policy Content Styling */
+    .policy-content h2 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; /* Adjusted size */ line-height: 2rem; font-weight: 700; border-bottom: 1px solid var(--soft-border); padding-bottom: 0.5rem; color: var(--text); }
+    .policy-content h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.125rem; /* Adjusted size */ line-height: 1.75rem; font-weight: 600; color: var(--text); }
     .policy-content p { margin-bottom: 1rem; line-height: 1.75; }
     .policy-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
-    .policy-content li { margin-bottom: 0.5rem; }
+    .policy-content li { margin-bottom: 0.5rem; padding-left: 0.5rem; }
+    .policy-content a { color: var(--sky-400); text-decoration: underline; }
+    .policy-content a:hover { color: var(--sky-500); }
+
+
+    /* Accessibility helpers */
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    @media (prefers-reduced-motion: reduce){ *{transition:none!important} }
   </style>
 </head>
-<body class="antialiased pt-20">
+<body>
 
-  <!-- ====== Header Start ====== -->
-  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 shadow-md backdrop-blur-lg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Header -->
+  <header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
       <div class="flex items-center justify-between h-20">
-        <!-- Site Logo/Name -->
-        <div class="flex-shrink-0">
-          <a href="index.html" class="flex items-center gap-3 text-2xl font-extrabold text-gray-800 transition-colors duration-300" id="logo-text-wrapper">
-            <svg class="w-8 h-8 text-sky-500" id="logo-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-            </svg>
-            <span id="logo-text">Shehroz Waleed</span>
-          </a>
-        </div>
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Home</a>
-          <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">About</a>
-          <a href="services.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Services</a>
-          <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium transition-colors">Contact</a>
+        <!-- Name instead of logo, now a link -->
+        <a href="https://shehrozwaleed.horizonhaulerllc.com" class="flex items-center gap-3">
+          <div>
+            <div class="text-lg font-extrabold tracking-tight text-white">Shehroz Waleed</div>
+            <div class="text-xs text-gray-400">Accounting · Strategy · Growth</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="https://shehrozwaleed.horizonhaulerllc.com/index.html" class="nav-link">Home</a>
+          <a href="https://shehrozwaleed.horizonhaulerllc.com/about.html" class="nav-link">About</a>
+          <a href="https://shehrozwaleed.horizonhaulerllc.com/services.html" class="nav-link">Services</a>
+          <a href="https://shehrozwaleed.horizonhaulerllc.com/contact.html" class="nav-link">Contact</a>
         </nav>
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center">
-          <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" id="hamburger-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg class="h-6 w-6 hidden" id="close-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+
+        <!-- Mobile -->
+        <div class="md:hidden">
+          <button id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" class="form-input p-2 rounded-md" title="Open menu" aria-label="Open menu">
+             <svg id="hamburger-icon" class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+             <svg id="close-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
           </button>
         </div>
       </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden mobile-menu fixed top-20 left-0 w-full bg-white shadow-lg transform -translate-x-full">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="index.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-        <a href="about.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
-        <a href="services.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-        <a href="contact.html" class="text-gray-600 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+    <!-- Mobile menu: Starts off-screen (-translate-x-full) -->
+    <div id="mobile-menu" class="md:hidden fixed top-20 left-0 right-0 z-40 transform -translate-x-full">
+      <div class="px-6 pb-6 pt-2">
+        <a href="https://shehrozwaleed.horizonhaulerllc.com/index.html" class="block py-2 text-white hover:opacity-80">Home</a>
+        <a href="https://shehrozwaleed.horizonhaulerllc.com/about.html" class="block py-2 text-white hover:opacity-80">About</a>
+        <a href="https://shehrozwaleed.horizonhaulerllc.com/services.html" class="block py-2 text-white hover:opacity-80">Services</a>
+        <a href="contact.html" class="block py-2 text-white hover:opacity-80">Contact</a>
       </div>
     </div>
   </header>
-  <!-- ====== Header End ====== -->
-
-  <a class="sr-only focus:not-sr-only p-2 m-2 inline-block bg-white text-blue-700 rounded" href="#main">Skip to content</a>
 
   <main id="main" tabindex="-1">
     <!-- Policy Page Header -->
-    <section class="bg-gray-50 py-16 sm:py-20" aria-labelledby="policy-title">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 id="policy-title" class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">Privacy Policy</h1>
-                <p class="mt-4 text-lg text-gray-600">Your privacy is a priority. This policy outlines our commitment to protecting it.</p>
-                <p class="mt-2 text-sm text-gray-500">Last Updated: October 1, 2025</p>
+    <section class="bg-black/80 border-b border-white/6 -mt-20 py-16 sm:py-20" aria-labelledby="policy-title">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-left max-w-3xl">
+                <h1 id="policy-title" class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Privacy Policy</h1>
+                <p class="mt-4 text-lg text-gray-400">Your privacy is a priority. This policy outlines our commitment to protecting it.</p>
+                <!-- Add ID to the p tag for JS targeting -->
+                <p id="last-updated" class="mt-2 text-sm text-gray-500">Last Updated: October 25, 2025</p>
             </div>
         </div>
     </section>
 
     <!-- Policy Content Section -->
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 policy-content">
-        
+    <section class="py-16 sm:py-24">
+      <div class="max-w-3xl mx-auto px-6 policy-content"> <!-- Use max-w-3xl for readability -->
+
         <p>Welcome to the privacy policy for Shehroz Waleed. This policy details how I collect, use, protect, and handle your personally identifiable information (PII) when you visit my website (`the "Site"`) or engage with my services. Please read this policy carefully to get a clear understanding of my practices. By using this Site, you agree to the terms outlined below.</p>
 
         <h2>1. Data Controller</h2>
@@ -105,7 +177,7 @@
 
         <h2>2. Information I Collect</h2>
         <p>I collect information in two ways: information you provide to me directly and information collected automatically as you navigate the Site.</p>
-        
+
         <h3>Personal Data You Provide</h3>
         <ul>
             <li><strong>Contact and Communication Data:</strong> When you use my contact forms, subscribe to my newsletter, or communicate with me via email, phone, or WhatsApp, you may provide your name, email address, phone number, and the contents of your message.</li>
@@ -133,7 +205,7 @@
 
         <h2>5. Data Security</h2>
         <p>I am committed to protecting your data. I implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure. While I strive to use commercially acceptable means to protect your data, I cannot guarantee its absolute security.</p>
-        
+
         <h2>6. Your Data Protection Rights</h2>
         <p>Depending on your location, you may have the following rights regarding your personal data:</p>
         <ul>
@@ -143,7 +215,7 @@
             <li><strong>The right to object to processing</strong> – You have the right to object to my processing of your personal data, under certain conditions.</li>
         </ul>
         <p>To exercise any of these rights, please contact me using the details below.</p>
-        
+
         <h2>7. Third-Party Websites</h2>
         <p>My Site contains links to external sites that are not operated by me (e.g., social media profiles, Calendly). If you click a third-party link, you will be directed to that site. I strongly advise you to review the privacy policy of every site you visit, as I have no control over their content or practices.</p>
 
@@ -152,193 +224,157 @@
 
         <h2>9. Contact Me</h2>
         <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please do not hesitate to contact me:</p>
-        <p><a href="mailto:shehrozwaleedbaloch@gmail.com" class="font-medium hover:underline">shehrozwaleedbaloch@gmail.com</a></p>
+        <p><a href="mailto:shehrozwaleedbaloch@gmail.com">shehrozwaleedbaloch@gmail.com</a></p>
 
       </div>
     </section>
   </main>
 
-<!-- Footer Section -->
-    <footer id="footer" class="bg-gray-900 text-gray-300" role="contentinfo">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-
-                <!-- Brand & Location Section -->
-                <div class="lg:col-span-1">
-                    <h3 class="text-3xl font-extrabold text-white mb-4">Shehroz Waleed</h3>
-                    <p class="text-gray-400 leading-relaxed mb-6 text-sm">
-                        Fusing financial acumen with e-commerce expertise to architect sustainable growth and lasting partnerships for brands on the Amazon marketplace.
-                    </p>
-                    <div class="flex items-center gap-3 text-sm text-gray-400">
-                        <svg class="w-5 h-5 text-sky-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-                        </svg>
-                        <span>Lahore, Punjab, Pakistan</span>
-                    </div>
-                </div>
-
-                <!-- Quick Links Section -->
-                <div>
-                    <h4 class="text-white font-bold tracking-wider mb-6 text-lg">Quick Links</h4>
-                    <ul class="space-y-4">
-                        <li><a href="index.html" class="group flex items-center gap-2 text-gray-400 hover:text-sky-400 transition-colors duration-300"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"></path></svg>Home</a></li>
-                        <li><a href="about.html" class="group flex items-center gap-2 text-gray-400 hover:text-sky-400 transition-colors duration-300"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>About</a></li>
-                        <li><a href="services.html" class="group flex items-center gap-2 text-gray-400 hover:text-sky-400 transition-colors duration-300"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Services</a></li>
-                        <li><a href="contact.html" class="group flex items-center gap-2 text-gray-400 hover:text-sky-400 transition-colors duration-300"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Contact</a></li>
-                        <li><a href="privacy.html" class="group flex items-center gap-2 text-gray-400 hover:text-sky-400 transition-colors duration-300"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Get in Touch Section -->
-                <div>
-                    <h4 class="text-white font-bold tracking-wider mb-6 text-lg">Get in Touch</h4>
-                    <ul class="space-y-4">
-                        <li>
-                            <a class="group flex items-start gap-3 text-gray-400 hover:text-sky-400 transition-colors duration-300" href="mailto:shehrozwaleedbaloch@gmail.com">
-                                <svg class="w-5 h-5 text-sky-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                                <span class="break-all">shehrozwaleedbaloch@gmail.com</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="group flex items-center gap-3 text-gray-400 hover:text-sky-400 transition-colors duration-300" href="tel:+923363330711">
-                                <svg class="w-5 h-5 text-sky-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                                <span>+92 336 3330711</span>
-                            </a>
-                        </li>
-                         <li>
-                            <a class="group flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors duration-300" href="https://wa.me/923363330711" target="_blank" rel="noopener noreferrer">
-                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                                <span>Whatsapp</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Connect & Subscribe Section -->
-                <div>
-                    <h4 class="text-white font-bold tracking-wider mb-6 text-lg">Connect & Subscribe</h4>
-                    <p class="text-gray-400 mb-4 leading-relaxed text-sm">Follow my journey and get exclusive tips on Amazon growth strategies.</p>
-                    <div class="flex gap-3 mb-6">
-                        <a href="https://www.linkedin.com/in/shehrozwaleed" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-blue-600 transition-all duration-300" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.784 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-1.335-.025-3.054-1.863-3.054-1.864 0-2.151 1.454-2.151 2.958v5.7h-3v-11h2.881v1.501h.041c.401-.757 1.379-1.557 2.838-1.557 3.033 0 3.594 1.996 3.594 4.59v6.466z"/></svg></a>
-                        <a href="https://twitter.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-sky-500 transition-all duration-300" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25zm-3.287 10.257l-1.755-2.318L4.98 20.25h2.728l7.249-7.743zm-5.852-7.744l3.26 4.304 1.862 2.46 7.25-7.744h-2.727l-3.26 4.304-1.862-2.46-7.25 7.744h2.727z"/></svg></a>
-                        <a href="https://www.instagram.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-pink-600 transition-all duration-300" aria-label="Instagram"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.265.058-1.645.069-4.85.069s-3.585-.011-4.85-.069c-3.225-.148-4.771-1.664-4.919-4.919C2.175 16.598 2.163 16.218 2.163 12.999s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072c-4.425.2-6.814 2.588-7.015 7.014C.013 8.332 0 8.741 0 12s.013 3.668.072 4.948c.201 4.425 2.59 6.814 7.015 7.014C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c4.425-.2 6.814-2.589 7.015-7.014.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.201-4.426-2.59-6.814-7.015-7.014C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                        <a href="https://www.facebook.com/shehrozwaleed228" target="_blank" rel="noopener noreferrer" class="bg-gray-800 p-3 rounded-lg text-gray-400 hover:text-white hover:bg-blue-700 transition-all duration-300" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.29h-3.128v-3.622h3.128V8.413c0-3.1 1.797-4.788 4.543-4.788 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.957.926-1.957 1.874v2.25h3.328l-.532 3.622h-2.796V24h5.486c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
-                    </div>
-                    <div id="subscription-container">
-                        <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3" autocomplete="off">
-                            <label for="email-input" class="sr-only">Email address</label>
-                            <input id="email-input" type="email" name="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-lg bg-gray-700/50 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-shadow" required>
-                            <button type="submit" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-sky-500">Subscribe</button>
-                        </form>
-                        <p class="text-xs text-gray-500 mt-2">Get occasional updates, tips, and offers. No spam.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Copyright Section -->
-            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                <p>&copy; <span id="current-year"></span> Shehroz Waleed. All rights reserved.</p>
-            </div>
+  <!-- Footer -->
+  <footer class="border-t border-white/6 mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-extrabold text-white">Shehroz Waleed</h3>
+          <p class="mt-3 text-gray-400">Fusing financial acumen with e-commerce expertise to architect sustainable growth on Amazon.</p>
+          <div class="mt-4 flex items-center gap-2 text-gray-400">
+            <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Lahore, Punjab, Pakistan</span>
+          </div>
         </div>
-    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // =================================
-            // Footer & Subscription Script
-            // =================================
+        <div>
+          <h4 class="footer-title text-base mb-4">Quick Links</h4>
+          <ul class="space-y-3">
+              <li><a href="https://shehrozwaleed.horizonhaulerllc.com/index.html" class="quick-link group flex items-center gap-2"><svg class="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"></path></svg>Home</a></li>
+              <li><a href="https://shehrozwaleed.horizonhaulerllc.com/about.html" class="quick-link group flex items-center gap-2"><svg class="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>About</a></li>
+              <li><a href="https://shehrozwaleed.horizonhaulerllc.com/services.html" class="quick-link group flex items-center gap-2"><svg class="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Services</a></li>
+              <li><a href="https://shehrozwaleed.horizonhaulerllc.com/contact.html" class="quick-link group flex items-center gap-2"><svg class="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Contact</a></li>
+              <li><a href="https://shehrozwaleed.horizonhaulerllc.com/privacy.html" class="quick-link group flex items-center gap-2 text-white font-semibold"><svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>Privacy Policy</a></li> <!-- Indicate active page -->
+          </ul>
+        </div>
 
-            // Set the current year in the footer automatically
-            const currentYearSpan = document.getElementById('current-year');
-            if (currentYearSpan) {
-                currentYearSpan.textContent = new Date().getFullYear();
-            }
+        <div>
+          <h4 class="footer-title text-base mb-4">Get in touch</h4>
+          <ul class="mt-4 space-y-3">
+            <li>
+                <a class="contact-link group flex items-start gap-3" href="mailto:shehrozwaleedbaloch@gmail.com">
+                    <svg class="w-5 h-5 text-gray-500 group-hover:text-sky-400 flex-shrink-0 mt-0.5 transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    <span class="break-all">shehrozwaleedbaloch@gmail.com</span>
+                </a>
+            </li>
+            <li>
+                <a class="contact-link group flex items-center gap-3" href="tel:+923363330711">
+                    <svg class="w-5 h-5 text-gray-500 group-hover:text-sky-400 flex-shrink-0 transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    <span>+92 336 3330711</span>
+                </a>
+            </li>
+            <li>
+                <a class="contact-link group flex items-center gap-3" href="https://wa.me/923363330711" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-5 h-5 text-gray-500 group-hover:text-green-400 flex-shrink-0 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+          </ul>
+        </div>
 
-            // Handle the subscription form submission
-            const subscribeForm = document.getElementById('subscribe-form');
-            const subscriptionContainer = document.getElementById('subscription-container');
+        <div>
+          <h4 class="footer-title text-base mb-4">Connect & subscribe</h4>
+          <p class="mt-3" style="color:var(--muted)">Follow and get occasional updates — no spam.</p>
 
-            if (subscribeForm && subscriptionContainer) {
-                subscribeForm.addEventListener('submit', function(event) {
-                    // Prevent the default form submission behavior (page reload)
-                    event.preventDefault();
+          <div class="mt-4 flex gap-3">
+            <!-- social links -->
+            <a href="https://www.linkedin.com/in/shehrozwaleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.784 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-1.335-.025-3.054-1.863-3.054-1.864 0-2.151 1.454-2.151 2.958v5.7h-3v-11h2.881v1.501h.041c.401-.757 1.379-1.557 2.838-1.557 3.033 0 3.594 1.996 3.594 4.59v6.466z"/></svg>
+            </a>
+             <a href="https://twitter.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25zm-3.287 10.257l-1.755-2.318L4.98 20.25h2.728l7.249-7.743zm-5.852-7.744l3.26 4.304 1.862 2.46 7.25-7.744h-2.727l-3.26 4.304-1.862-2.46-7.25 7.744h2.727z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.265.058-1.645.069-4.85.069s-3.585-.011-4.85-.069c-3.225-.148-4.771-1.664-4.919-4.919C2.175 16.598 2.163 16.218 2.163 12.999s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072c-4.425.2-6.814 2.588-7.015 7.014C.013 8.332 0 8.741 0 12s.013 3.668.072 4.948c.201 4.425 2.59 6.814 7.015 7.014C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c4.425-.2 6.814-2.589 7.015-7.014.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.201-4.426-2.59-6.814-7.015-7.014C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/shehrozwaleed228" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.29h-3.128v-3.622h3.128V8.413c0-3.1 1.797-4.788 4.543-4.788 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.957.926-1.957 1.874v2.25h3.328l-.532 3.622h-2.796V24h5.486c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+          </div>
 
-                    // You could add an API call here to actually subscribe the user
-                    // For now, we'll just show a success message.
+          <!-- Subscription -->
+          <div class="mt-6">
+            <form id="subscribeForm" class="flex gap-3">
+              <label for="subEmail" class="sr-only">Email</label>
+              <input id="subEmail" type="email" placeholder="you@company.com" class="form-input w-full" required>
+              <button type="submit" class="btn btn-primary flex-shrink-0">Subscribe</button>
+            </form>
+            <div id="subMsg" class="mt-3" style="color:var(--muted); font-size:.9rem">No spam. Occasional updates and guides.</div>
+          </div>
+        </div>
 
-                    // Replace the form with a thank you message
-                    subscriptionContainer.innerHTML = `
-                        <div class="flex items-center justify-center text-center p-4 bg-green-900/50 border border-green-700 rounded-lg">
-                            <p class="text-green-300 font-semibold">Thank you for subscribing!</p>
-                        </div>
-                    `;
-                });
-            }
+        <div class="mt-8 border-t border-white/6 pt-6 text-xs text-gray-500 text-center">
+          &copy; <span id="year"></span> Shehroz Waleed. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
 
-            // =================================
-            // Scroll Animation & Header Script
-            // =================================
-            const revealElements = document.querySelectorAll('.reveal');
-            if (revealElements.length > 0) {
-                const revealObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, {
-                    threshold: 0.1,
-                });
-                revealElements.forEach(el => {
-                    revealObserver.observe(el);
-                });
-            }
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-            // ====== Header Script ======
-            const header = document.getElementById('site-header');
-            const logoText = document.getElementById('logo-text');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const hamburgerIcon = document.getElementById('hamburger-icon');
-            const closeIcon = document.getElementById('close-icon');
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-            // This part of the script will only run if the header elements actually exist on the page
-            if (header && mobileMenuButton) {
-                // Sticky header background change on scroll
-                const handleScroll = () => {
-                    if (window.scrollY > 50) {
-                        header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
-                        if(logoText) logoText.classList.remove('text-white');
-                        if(logoText) logoText.classList.add('text-gray-800');
-                        mobileMenuButton.classList.remove('text-white');
-                        mobileMenuButton.classList.add('text-gray-600');
-                    } else {
-                        header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
-                        if(logoText) logoText.classList.add('text-white');
-                        if(logoText) logoText.classList.remove('text-gray-800');
-                        mobileMenuButton.classList.add('text-white');
-                        mobileMenuButton.classList.remove('text-gray-600');
-                    }
-                };
+    if (mobileToggle && mobileMenu && hamburgerIcon && closeIcon) {
+      mobileToggle.addEventListener('click', () => {
+        const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+        mobileToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('-translate-x-full'); // Use transform to slide in/out
+        // Ensure menu is not hidden if we rely on transform
+        if (mobileMenu.classList.contains('-translate-x-full')) {
+            // If it's becoming hidden via transform, maybe add hidden after transition?
+            // Or ensure initial state correctly handles transform
+        } else {
+             mobileMenu.classList.remove('hidden'); // Ensure it's not hidden when sliding in
+        }
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
 
-                // Mobile menu toggle
-                const toggleMenu = () => {
-                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-                    if(hamburgerIcon) hamburgerIcon.classList.toggle('hidden');
-                    if(closeIcon) closeIcon.classList.toggle('hidden');
-                    if(mobileMenu) mobileMenu.classList.toggle('-translate-x-full');
-                };
+      // Add check for initial state on load if needed
+      if (!mobileMenu.classList.contains('-translate-x-full')) {
+         mobileMenu.classList.add('-translate-x-full'); // Start hidden
+      }
 
-                window.addEventListener('scroll', handleScroll);
-                mobileMenuButton.addEventListener('click', toggleMenu);
+    } else {
+        console.error("Mobile menu elements not found. Check IDs: mobile-toggle, mobile-menu, hamburger-icon, close-icon");
+    }
 
-                // Initial check in case page is reloaded halfway down
-                handleScroll();
-            }
-        });
-    </script>
+
+    // Subscribe
+    const subscribeForm = document.getElementById('subscribeForm');
+    const subMsg = document.getElementById('subMsg');
+    subscribeForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Replace with real integration (Mailchimp, ConvertKit, etc.)
+      subMsg.textContent = 'Thanks — check your inbox. (Demo)';
+      subscribeForm.reset();
+    });
+
+    // Automatically update last updated date
+    document.addEventListener('DOMContentLoaded', function() {
+        const lastUpdatedElement = document.getElementById('last-updated');
+        if (lastUpdatedElement) {
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            lastUpdatedElement.textContent = 'Last Updated: ' + today.toLocaleDateString('en-US', options);
+        }
+    });
+
+  </script>
 </body>
 </html>
+
